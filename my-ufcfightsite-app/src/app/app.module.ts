@@ -3,26 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EventComponent } from './components/event/event.component';
-import { FeatureComponent } from './components/feature/feature.component';
-import { FeedbackComponent } from './components/feedback/feedback.component';
-import { FightersComponent } from './components/fighters/fighters.component';
-import { LandingComponent } from './components/landing/landing.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FeedbackComponent } from './components/feedback/feedback.component';
+import { FeatureComponent } from './components/feature/feature.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { MaterialModule } from './material/material.module';
+import { EventComponent } from './components/event/event.component';
+import { FightersComponent } from './components/fighters/fighters.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventComponent,
-    FeatureComponent,
     FeedbackComponent,
-    FightersComponent,
-    LandingComponent
+    FeatureComponent,
+    LandingComponent,
+    EventComponent,
+    FightersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
