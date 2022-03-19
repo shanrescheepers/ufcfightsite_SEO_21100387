@@ -8,6 +8,7 @@ import { FeatureComponent } from './components/feature/feature.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { FightersComponent } from './components/fighters/fighters.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LandingComponent } from './components/landing/landing.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
