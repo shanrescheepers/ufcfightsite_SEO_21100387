@@ -19,11 +19,6 @@ export class ApiService {
       .then(data => data.json())
   }
 
-  async getFight(fightId: string) {
-    return await fetch(`https://us-central1-fight-site-6dbcd.cloudfunctions.net/getFight`)
-      .then(data => data.json())
-  }
-
   async getFighters() {
     return await fetch(`https://us-central1-fight-site-6dbcd.cloudfunctions.net/getFighters`)
       .then(data => data.json())

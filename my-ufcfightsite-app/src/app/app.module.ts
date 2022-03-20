@@ -13,7 +13,9 @@ import { FightersComponent } from './components/fighters/fighters.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
+import { provideAnalytics,getAnalytics, } from '@angular/fire/analytics';
+import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics'
+import { AngularFireModule } from '@angular/fire/compat'
 import { provideFunctions,getFunctions } from '@angular/fire/functions';
 
 @NgModule({
@@ -31,9 +33,9 @@ import { provideFunctions,getFunctions } from '@angular/fire/functions';
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAnalytics(() => getAnalytics()),
-    provideFunctions(() => getFunctions())
+    AngularFireModule.initializeApp(environment.firebase),
+    provideFunctions(() => getFunctions()),
+    AngularFireAnalyticsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
