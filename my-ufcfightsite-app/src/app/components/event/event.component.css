@@ -1,0 +1,32 @@
+.event-page {
+    margin: 50px;
+}
+
+.title-card {
+    margin-bottom: 50px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 50px;
+
+    margin: 0px 50px 50px 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .event-page {
+        margin: 25px;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 25px;
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+@media only screen and (max-width: 425px) {}
