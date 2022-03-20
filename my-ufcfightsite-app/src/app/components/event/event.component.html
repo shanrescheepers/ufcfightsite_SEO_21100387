@@ -1,7 +1,46 @@
-<!-- <section *ngIf="clickedEvent" class="event-page">
+<section *ngIf="clickedEvent" class="event-page">
     <mat-card class="title-card">
         <mat-card-title>
             <h1 class="header">{{clickedEvent.Name}}</h1>
         </mat-card-title>
+        <mat-card-subtitle align="center">{{clickedEvent.DateTime | date}} @ {{clickedEvent.DateTime |
+            date:'shortTime'}}</mat-card-subtitle>
     </mat-card>
-</section> -->
+    <h1 class="header">Upcoming Fights</h1>
+    <div *ngFor="let fight of clickedEvent.Fights" class="card-grid" style="text-align: center;">
+        <mat-card>
+            <mat-card-title>
+                <h2>{{ fight.Fighters[0].FirstName }} {{ fight.Fighters[0].LastName }}</h2>
+            </mat-card-title>
+            <mat-card-content>
+                <span>Wins:</span>
+                <h1>{{fight.Fighters[0].PreFightWins}}</h1>
+                <span>Draws:</span>
+                <h1>{{fight.Fighters[0].PreFightDraws}}</h1>
+                <span>Losses:</span>
+                <h1>{{fight.Fighters[0].PreFightLosses}}</h1>
+                <span>Odds:</span>
+                <h1>{{fight.Fighters[0].Moneyline}}</h1>
+            </mat-card-content>
+        </mat-card>
+        <div>
+            <h1 class="header">VS</h1>
+            <h3>Rounds: {{fight.Rounds}}</h3>
+        </div>
+        <mat-card>
+            <mat-card-title>
+                <h2>{{ fight.Fighters[1].FirstName }} {{ fight.Fighters[1].LastName }}</h2>
+            </mat-card-title>
+            <mat-card-content>
+                <span>Wins:</span>
+                <h1>{{fight.Fighters[1].PreFightWins}}</h1>
+                <span>Draws:</span>
+                <h1>{{fight.Fighters[1].PreFightDraws}}</h1>
+                <span>Losses:</span>
+                <h1>{{fight.Fighters[1].PreFightLosses}}</h1>
+                <span>Odds:</span>
+                <h1>{{fight.Fighters[1].Moneyline}}</h1>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</section>
