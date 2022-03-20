@@ -17,7 +17,7 @@ export class FeatureComponent implements OnInit {
     this.apiService.getSchedule().then(schedule => {
       this.upcomingSchedule = schedule.data.filter(event => event.Status == "Scheduled")
 
-      this.analytics.logEvent("schedule_screen_viewed")
+      this.analytics.logEvent("schedule_screen_viewed") //user lands on sched dscreen, as soon as 'more' clicked, event is logged.
     })
   }
 }
