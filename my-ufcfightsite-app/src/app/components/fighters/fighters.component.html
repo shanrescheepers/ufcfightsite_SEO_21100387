@@ -1,1 +1,43 @@
-<p>fighters works!</p>
+<section>
+    <h1 class="header">Search Fighter</h1>
+    <div class="search-grid">
+        <mat-form-field appearance="outline">
+            <mat-label>Lastname</mat-label>
+            <input [formControl]="lastName" matInput placeholder="Mcgregor">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+        <button (click)="searchFighter()" class="search-button" mat-raised-button color="primary">Search</button>
+    </div>
+    <div class="card-grid">
+        <mat-card *ngFor="let fighter of searchedFighters">
+            <mat-card-header>
+                <mat-card-title>{{ fighter.FirstName }} {{ fighter.LastName }}</mat-card-title>
+                <mat-card-subtitle>{{fighter.Nickname}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <h3>Birth date: {{fighter.BirthDate | date}}</h3>
+                <h3>Height: {{fighter.Height}} in.</h3>
+                <h3>Weight: {{fighter.Weight}} lb.</h3>
+                <h3>Reach: {{fighter.Reach}} in.</h3>
+                <br>
+                <mat-divider></mat-divider>
+                <br>
+                <h3 style="font-weight: bold;">Career Stats:</h3>
+                <h3>Wins: {{fighter.Wins}}</h3>
+                <h3>Draws: {{fighter.Draws}}</h3>
+                <h3>Losses: {{fighter.Losses}}</h3>
+                <br>
+                <h3>Title Wins: {{fighter.TitleWins}}</h3>
+                <h3>Title Draws: {{fighter.TitleDraws}}</h3>
+                <h3>Title Losses: {{fighter.TitleLosses}}</h3>
+                <br>
+                <div *ngIf="fighter.CareerStats">
+                    <h3>Strike Accuracy: {{fighter.CareerStats.SigStrikeAccuracy}}%</h3>
+                    <h3>Strikes p/m: {{fighter.CareerStats.SigStrikesLandedPerMinute}}</h3>
+                    <h3>Submissions: {{fighter.Submissions}}</h3>
+                    <h3>Technical Knockouts: {{fighter.TechnicalKnockouts}}</h3>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</section>
