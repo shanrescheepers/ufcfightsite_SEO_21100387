@@ -17,8 +17,7 @@ export class EventComponent implements OnInit {
   ngOnInit(): void {
     let eventId = this.route.snapshot.paramMap.get('id');
     this.apiService.getEvent(eventId).then(event => {
-      this.clickedEvent = event;
-      console.log(this.clickedEvent);
+      this.clickedEvent = event.data;
     })
   }
 }

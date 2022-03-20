@@ -11,13 +11,10 @@ export class ApiService {
   }
 
   async getEvent(eventId: string) {
-    const payload = { "eventId" : eventId }
 
     return await fetch(`https://us-central1-fight-site-6dbcd.cloudfunctions.net/getEvent`, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(payload),
+      method: 'POST',
+      body: eventId,
     })
       .then(data => data.json())
   }
