@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';;
 
 @Component({
   selector: 'app-feature',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feature.component.css']
 })
 export class FeatureComponent implements OnInit {
+  upcomingSchedule;
 
-  constructor() { }
+  // dependency injection => sit in constructor
+  constructor(public apiService: ApiService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.apiService.getSchedule().then(schedule => {
+      this.upcomingSchedule = schedule.data.filter(event => event.Status == "Scheduled")
+      console.log(this.upcomingSchedule)
+    })
   }
-
 }

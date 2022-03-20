@@ -1,1 +1,14 @@
-<p>feature works!</p>
+<section>
+    <h1 class="header">2022 Schedule</h1>
+    <div class="card-grid">
+        <mat-card *ngFor="let event of upcomingSchedule">
+            <mat-card-header>
+                <mat-card-title>{{event.ShortName}}</mat-card-title>
+                <mat-card-subtitle>{{event.DateTime | date}} @ {{event.DateTime | date:'shortTime'}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-actions align="end">
+                <button [routerLink]="['/event', event.EventId]" mat-button color="accent" mat-button>MORE</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</section>
