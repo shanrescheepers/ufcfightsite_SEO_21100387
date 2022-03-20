@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fight-site-6dbcd"
+  },
+  "targets": {
+    "fight-site-6dbcd": {
+      "hosting": {
+        "my-ufcfightsite-app": [
+          "fight-site-6dbcd"
+        ]
+      }
+    }
+  }
+}
