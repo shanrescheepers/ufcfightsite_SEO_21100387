@@ -1,4 +1,40 @@
+mat-toolbar {
+    height: 100px;
+
+}
+
+
+
 /* nav icons to diisplay flex */
 .example-spacer {
     flex: 1 1 auto;
+}
+
+.site-logo {
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .site-logo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80px;
+    }
+
+    mat-toolbar {
+
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .site-logo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50px;
+    }
 }

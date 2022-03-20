@@ -7,7 +7,7 @@ import { ApiService } from './services/api.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'clientApp';
+  title = 'ufcFightSiteApp';
 
   constructor() { }
 }
