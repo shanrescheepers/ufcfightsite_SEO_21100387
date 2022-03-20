@@ -1,18 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-event',
-//   templateUrl: './event.component.html',
-//   styleUrls: ['./event.component.css']
-// })
-// export class EventComponent implements OnInit {
-//   clickedEvent;
-//   constructor() { }
-
-//   ngOnInit(): void {
-
-//   }
-// }
+import { ActivatedRoute } from '@angular/router';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-event',
@@ -21,12 +9,6 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class EventComponent implements OnInit {
-<<<<<<< Updated upstream
-
-  constructor() { }
-
-  ngOnInit(): void {
-=======
   clickedEvent;
   //super duper weird ding want mense laat grys word
 
@@ -38,7 +20,5 @@ export class EventComponent implements OnInit {
       this.clickedEvent = event;
       console.log(this.clickedEvent);
     })
->>>>>>> Stashed changes
   }
-
 }
