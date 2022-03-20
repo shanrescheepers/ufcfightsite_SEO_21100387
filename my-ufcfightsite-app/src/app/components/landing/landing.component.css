@@ -1,3 +1,4 @@
+/* responsiveness of cards based on the 3 fr repeat and grid row css */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
