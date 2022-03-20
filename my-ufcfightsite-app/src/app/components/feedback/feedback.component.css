@@ -1,0 +1,17 @@
+.feedback-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 50px;
+}
+
+.submit-button {
+    max-width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .feedback-grid {
+        grid-gap: 25px;
+        margin: 25px;
+    }
+}
