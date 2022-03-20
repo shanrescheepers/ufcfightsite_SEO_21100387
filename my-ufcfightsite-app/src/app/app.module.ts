@@ -11,12 +11,10 @@ import { MaterialModule } from './material/material.module';
 import { EventComponent } from './components/event/event.component';
 import { FightersComponent } from './components/fighters/fighters.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAnalytics,getAnalytics, } from '@angular/fire/analytics';
 import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics'
 import { AngularFireModule } from '@angular/fire/compat'
-import { provideFunctions,getFunctions } from '@angular/fire/functions';
+import { provideFunctions, getFunctions } from '@angular/fire/functions';
 
 @NgModule({
   declarations: [
