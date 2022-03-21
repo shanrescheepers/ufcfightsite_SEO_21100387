@@ -10,40 +10,49 @@
 
     </mat-card>
     <h1 class="header">UPCOMING FIGHTS</h1>
-    <div *ngFor="let fight of clickedEvent.Fights" class="card-grid" style="text-align: center;">
-        <mat-card>
-            <mat-card-title>
-                <h2>{{ fight.Fighters[0].FirstName }} {{ fight.Fighters[0].LastName }}</h2>
-            </mat-card-title>
-            <mat-card-content>
-                <span>Wins:</span>
-                <h1>{{fight.Fighters[0].PreFightWins}}</h1>
-                <span>Draws:</span>
-                <h1>{{fight.Fighters[0].PreFightDraws}}</h1>
-                <span>Losses:</span>
-                <h1>{{fight.Fighters[0].PreFightLosses}}</h1>
-                <span>Odds:</span>
-                <h1>{{fight.Fighters[0].Moneyline}}</h1>
-            </mat-card-content>
-        </mat-card>
-        <div>
-            <h1 class="header-1">VS</h1>
-            <h3>Rounds: {{fight.Rounds}}</h3>
+    <div *ngFor="let fight of clickedEvent.Fights" style="text-align: center;">
+        <div class="card-grid" *ngIf="fight.Fighters[0]">
+            <!-- fighter 1=0, fighter 2 =1. indekse. if object isn't there, display none. if obj index 1+, display-->
+            <mat-card>
+                <mat-card-title>
+                    <h2>{{ fight.Fighters[0].FirstName }} {{ fight.Fighters[0].LastName }}</h2>
+                </mat-card-title>
+                <mat-card-content>
+                    <span>Wins:</span>
+                    <h1>{{fight.Fighters[0].PreFightWins}}</h1>
+                    <span>Draws:</span>
+                    <h1>{{fight.Fighters[0].PreFightDraws}}</h1>
+                    <span>Losses:</span>
+                    <h1>{{fight.Fighters[0].PreFightLosses}}</h1>
+                    <span>Odds:</span>
+                    <h1 *ngIf="fight.Fighters[0].Moneyline">{{fight.Fighters[0].Moneyline}}</h1>
+                    <!-- if, then display-->
+                    <h1 *ngIf="!fight.Fighters[0].Moneyline">TBC</h1>
+                    <!--If Not !!! display this-->
+                </mat-card-content>
+            </mat-card>
+            <div>
+                <h1 class="header-1">VS</h1>
+                <h3>Rounds: {{fight.Rounds}}</h3>
+            </div>
+            <mat-card>
+                <mat-card-title>
+                    <h2>{{ fight.Fighters[1].FirstName }} {{ fight.Fighters[1].LastName }}</h2>
+                </mat-card-title>
+                <mat-card-content>
+                    <span>Wins:</span>
+                    <h1>{{fight.Fighters[1].PreFightWins}}</h1>
+                    <span>Draws:</span>
+                    <h1>{{fight.Fighters[1].PreFightDraws}}</h1>
+                    <span>Losses:</span>
+                    <h1>{{fight.Fighters[1].PreFightLosses}}</h1>
+                    <span>Odds:</span>
+                    <h1 *ngIf="fight.Fighters[1].Moneyline">{{fight.Fighters[0].Moneyline}}</h1>
+                    <!-- if, then display-->
+                    <h1 *ngIf="!fight.Fighters[1].Moneyline">TBC</h1>
+                    <!--If Not !!! display this-->
+                </mat-card-content>
+            </mat-card>
         </div>
-        <mat-card>
-            <mat-card-title>
-                <h2>{{ fight.Fighters[1].FirstName }} {{ fight.Fighters[1].LastName }}</h2>
-            </mat-card-title>
-            <mat-card-content>
-                <span>Wins:</span>
-                <h1>{{fight.Fighters[1].PreFightWins}}</h1>
-                <span>Draws:</span>
-                <h1>{{fight.Fighters[1].PreFightDraws}}</h1>
-                <span>Losses:</span>
-                <h1>{{fight.Fighters[1].PreFightLosses}}</h1>
-                <span>Odds:</span>
-                <h1>{{fight.Fighters[1].Moneyline}}</h1>
-            </mat-card-content>
-        </mat-card>
     </div>
 </section>
