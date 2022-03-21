@@ -3,10 +3,30 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: 50px;
+
+}
+
+.header {
+    margin-top: 20px;
+    font-family: 'Black Ops One';
+    color: rgb(29, 29, 29) !important;
+    font-size: 33px;
+}
+
+section {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(224, 222, 222), rgba(5, 5, 5, 0.781)) !important;
+    width: auto;
+    height: 82vh;
 }
 
 .submit-button {
     max-width: 100px;
+    text-align: center;
+    background-color: black;
+}
+
+.submit-button:hover {
+    background-color: rgb(172, 30, 30);
 }
 
 @media only screen and (max-width: 768px) {

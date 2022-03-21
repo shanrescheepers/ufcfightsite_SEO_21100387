@@ -6,6 +6,81 @@
     margin: 0px 50px 50px 50px;
 }
 
+mat-card {
+    height: auto;
+}
+
+section {
+    background-image: linear-gradient(to bottom, rgb(233, 231, 231), rgb(131, 130, 130), rgba(39, 39, 39, 0.73)) !important;
+}
+
+.header {
+    font-family: 'Black Ops One';
+    color: rgb(255, 255, 255) !important;
+    font-size: 33px;
+    text-shadow:
+        0 0 7px rgb(26, 26, 26),
+        0 0 10px rgb(26, 26, 26),
+        0 0 21px #fff,
+        0 0 42px rgba(3, 32, 46, 0.664),
+        0 0 82px rgba(2, 24, 34, 0.657),
+        0 0 92px rgba(3, 36, 51, 0.87),
+        0 0 102px rgba(17, 166, 235, 0.116),
+        0 0 151px rgba(126, 126, 126, 0);
+}
+
+hr {
+    width: 33%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    color: black !important;
+}
+
+img {
+    align-self: center;
+}
+
+.fightnightlogo img {
+    width: 70%;
+    height: 80%;
+    object-fit: cover center;
+
+}
+
+/* https://stackoverflow.com/questions/46841648/make-all-images-in-mat-card-image-same-size-but-scale-correctly */
+.twoseventhree img {
+    width: 70%;
+    height: 80%;
+    object-fit: cover center;
+
+}
+
+.twosevenfour img {
+    width: 70%;
+    height: 80%;
+    object-fit: cover center;
+
+}
+
+.twosevensix img {
+    width: 70%;
+    height: 80%;
+    object-fit: cover center;
+
+}
+
+.twoeightone img {
+    width: 70%;
+    height: 80%;
+    object-fit: cover center;
+
+}
+
+/* mat-button, button {
+    vertical-align: bottom;
+    align-items: bottom;
+} */
+
 @media only screen and (max-width: 768px) {
     .card-grid {
         grid-template-columns: repeat(2, 1fr);

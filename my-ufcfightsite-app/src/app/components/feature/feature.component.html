@@ -1,14 +1,28 @@
-<section>
-    <h1 class="header">2022 Schedule</h1>
+<section class="feauture-body">
+    <h1 class="header">2022 UFC Schedule</h1>
+    <hr class="hr-line">
     <div class="card-grid">
         <mat-card *ngFor="let event of upcomingSchedule">
             <mat-card-header>
                 <mat-card-title>{{event.ShortName}}</mat-card-title>
                 <mat-card-subtitle>{{event.DateTime | date}} @ {{event.DateTime | date:'shortTime'}}</mat-card-subtitle>
             </mat-card-header>
+            <!-- //if statement https://stackoverflow.com/questions/36026428/angular2-show-placeholder-image-if-img-src-is-not-valid-->
+            <img class="fightnightlogo" *ngIf="event.ShortName.includes('Night')" mat-card-image
+                src="assets/images/ufc_fight_night_logo.svg" alt="ufc fight night logo">
+            <img class="twoseventhree" *ngIf="event.ShortName.includes('273')" mat-card-image
+                src="assets/images/273-100.jpg" alt="ufc 273 logo">
+            <img class="twosevenfour" *ngIf="event.ShortName.includes('274')" mat-card-image
+                src="assets/images/274-100.jpg" alt="ufc 274 logo">
+            <img class="twosevensix" *ngIf="event.ShortName.includes('276')" mat-card-image
+                src="assets/images/281-100.jpg" alt="ufc 276 logo">
+            <img class="twoeightone" *ngIf="event.ShortName.includes('281')" mat-card-image
+                src="assets/images/276-100.jpg" alt="ufc 281 logo">
             <mat-card-actions align="end">
-                <button [routerLink]="['/event', event.EventId]" mat-button color="accent" mat-button>MORE</button>
+                <button [routerLink]="['/event', event.EventId]" mat-button color="accent" mat-button
+                    align="bottom">MORE</button>
             </mat-card-actions>
         </mat-card>
     </div>
+    <div style="height: 30px;"></div>
 </section>

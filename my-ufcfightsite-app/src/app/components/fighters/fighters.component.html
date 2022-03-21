@@ -1,12 +1,12 @@
-<section>
-    <h1 class="header">Search Fighter</h1>
+<section class="bg">
+    <h1 class="header" style="letter-spacing: 2px;">Search a Fighter</h1>
     <div class="search-grid">
         <mat-form-field appearance="outline">
             <mat-label>Lastname</mat-label>
             <input [formControl]="lastName" matInput placeholder="Mcgregor">
             <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
-        <button (click)="searchFighter()" class="search-button" mat-raised-button color="primary">Search</button>
+        <button (click)="searchFighter()" class="search-button" mat-raised-button color="Black">Search</button>
     </div>
     <div class="card-grid">
         <mat-card *ngFor="let fighter of searchedFighters">
