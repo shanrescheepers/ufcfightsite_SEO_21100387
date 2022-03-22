@@ -48,12 +48,12 @@ mat-card-title {
 }
 
 .links-grid {
-    text-align: center !important;
     display: grid;
-    margin-left: 42%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 50px;
+    text-align: center;
+    align-self: center;
 }
 
 /* .links-grid:hover {
@@ -123,7 +123,6 @@ hr {
     color: rgb(31, 29, 29);
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -136,7 +135,6 @@ hr {
     .value-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 25px;
-        margin: 25px;
     }
 }
 
@@ -161,10 +159,7 @@ hr {
         text-align: center;
         width: auto;
         scroll-behavior: smooth;
-
         padding: auto;
-
-
     }
 
     h3, .mat-display-2 {
@@ -180,11 +175,13 @@ hr {
         font-size: 18px;
     }
 
-    .links-grid {
-        margin: 50px;
-    }
-
     .links-grid:active {
         color: #861212;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .subheader {
+        margin-top: -20px;
     }
 }
