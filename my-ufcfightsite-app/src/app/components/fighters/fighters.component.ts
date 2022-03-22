@@ -24,6 +24,7 @@ export class FightersComponent implements OnInit {
 
   searchFighter() {
     this.searchedFighters = this.fighters.filter(fighter => fighter.LastName.includes(this.lastName.value))
-    this.analytics.logEvent("fighter_searched", { name: `${this.lastName.value}`})
+    this.analytics.logEvent("fighter_searched", { name: `${this.lastName.value}` })
+    // hierdie stuur die data van die user na die analytics toe, agv die event
   }
 }

@@ -5,9 +5,14 @@
             here</h1>
         <mat-form-field appearance="outline">
             <mat-label>Leave some feedback</mat-label>
-            <textarea matInput
-                placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit scelerisque lacinia. Quisque ipsum mi, porta vitae sagittis bibendum, rutrum at nisi. Aliquam finibus consequat justo, non viverra purus interdum eget. Nulla porttitor mollis molestie. Donec commodo libero a varius imperdiet. Phasellus eu pulvinar eros."></textarea>
+            <textarea matInput [formControl]="feedback"></textarea>
+            <mat-error> Feedback Input Required </mat-error>
+            <!-- //indien error with FormC -->
         </mat-form-field>
-        <button class="submit-button" mat-raised-button color="primary">Submit</button>
+
+        <button (click)="submitFeedback()" [disabled]="!feedback.valid" class="submit-button" mat-raised-button
+            color="primary">Submit</button>
+        <!-- trigger die knoppie vir die formcontrol method -->
+        <!-- !if not valid, disable button. daar sal altyd valid data moet wees. -->
     </div>
 </section>
