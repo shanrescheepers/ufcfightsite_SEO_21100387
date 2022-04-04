@@ -31,6 +31,6 @@ export class FeedbackComponent implements OnInit {
       this.feedback.reset()
       this.snackbar.open("Feedback submitted. Thank you very much!")
     })
-    // ERROR Error: Uncaught (in promise): FirebaseError: [code=permission-denied]: Missing or insufficient permissions.
+    // ERROR Error: Uncaught (in promise): FirebaseError: [code=permission-denied]: Missing or insufficient permissions. Set False=> True in Firestore
   }
 }
