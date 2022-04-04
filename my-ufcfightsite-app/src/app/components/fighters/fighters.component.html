@@ -1,5 +1,6 @@
 <section class="bg">
     <h1 class="header" style="letter-spacing: 2px;">Search a Fighter</h1>
+
     <div class="search-grid">
         <mat-form-field appearance="outline">
             <mat-label>Lastname</mat-label>
@@ -8,6 +9,7 @@
         </mat-form-field>
         <button (click)="searchFighter()" class="search-button" mat-raised-button color="Black">Search</button>
     </div>
+
     <div class="card-grid">
         <mat-card *ngFor="let fighter of searchedFighters">
             <mat-card-header>

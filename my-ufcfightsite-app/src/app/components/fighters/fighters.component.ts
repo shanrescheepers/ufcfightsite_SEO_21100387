@@ -23,7 +23,10 @@ export class FightersComponent implements OnInit {
   }
 
   searchFighter() {
-    this.searchedFighters = this.fighters.filter(fighter => fighter.LastName.includes(this.lastName.value))
+    // Ek gaan die to lower case eerste laat gebeur, sodat dit meer User Friendly moet wees, so enige letter append die toLowerCase meth.
+
+    this.searchedFighters = this.fighters.filter(fighter => fighter.LastName.toLowerCase().includes(this.lastName.value.toLowerCase()))
+
     this.analytics.logEvent("fighter_searched", { name: `${this.lastName.value}` })
     // hierdie stuur die data van die user na die analytics toe, agv die event
   }
