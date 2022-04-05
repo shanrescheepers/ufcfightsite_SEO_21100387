@@ -24,13 +24,14 @@ export class FeedbackComponent implements OnInit {
     this.firestoreDB.collection('fightsite_user_feedbacks_collection').add({
       // JSON objs with key name and waarde
       feedback: this.feedback.value,
-      //In the moment's data, taking the unique ID generated of FS.Firestore calls is = Async Calls
+      //In THE exact moment's data, taking the unique ID generated of FS. Firestore call is ook Async Calls
       timestamp: new Date()
     }).then(() => {
-      // new as die data reg deur kom, die promise, sal 31+32 gebeur. NET wanneer die data terugkom suksesvol
+      // 'new'=== as die data reg en mooi deurkom, die promise, sal 31+32 gebeur. Maar NET wanneer die data suksesvol terugkom sonder enige hassles.
       this.feedback.reset()
       this.snackbar.open("Feedback submitted. Thank you very much!")
     })
-    // ERROR Error: Uncaught (in promise): FirebaseError: [code=permission-denied]: Missing or insufficient permissions. Set False=> True in Firestore
+    // ERROR Error: Uncaught (in promise): FirebaseError: [code=permission-denied]: Missing or insufficient permissions. 
+    //FIX=== Set 'False'==> 'True' in Firestore
   }
 }
