@@ -132,12 +132,12 @@ Install all required dependencies by running the following in the CLI
 
 Using the sportsdata io MMA API, I collected and collated all 2022 UFC events data into a simple unchallenging Angular back and foreground!
 
-![image3](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/my-ufcfightsite-app/src/assets/images/mockup2.jpg)
+![image3](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/mockup2.jpg)
 
 ### Fighter Search
 Seamlessly search for any UFC fighter and view their different stats and information
 
-![image4](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/my-ufcfightsite-app/src/assets/images/mockup4.jpg)
+![image4](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/mockup4.jpg)
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->
