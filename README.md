@@ -58,7 +58,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <!-- PROJECT DESCRIPTION -->
 ## About the Project
 <!-- header image of project -->
-![image1][/my-ufcfightsite-app/src/assets/images/fightsite-logo-new_1.svg]
+![image1][https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/fightsite-logo-new_1.svg]
 
 ### Project Description
 Built for and by fans of the UFC. This project serves to showcase and remind users of the UFC 2022 events and fighters catalogue.
