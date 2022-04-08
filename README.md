@@ -27,7 +27,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 </a>
 
 <h3 align="center">UFC Fight Site</3>
-
+<a href="https://www.loom.com/share/3f5610c98a0e4ff9b178f52440ec3303?sharedAppSource=personal_library">View Website Showcase Demo</a>
 
 ## Table of Contents
 
