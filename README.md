@@ -23,7 +23,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <p align="center">
 
 <a href="https://github.com/shanrescheepers/ufcfightsite_SEO_21100387">
-<img src="app/src/assets/images/fightsite-logo-new_1.svg" alt="Logo" width="140px" height="140px">
+<img src="/my-ufcfightsite-app/src/assets/images/fightsite-logo-new_1.svg" alt="Logo" width="140" height="140">
 </a>
 
 <h3 align="center">UFC Fight Site</3>
