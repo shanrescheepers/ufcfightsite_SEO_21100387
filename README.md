@@ -154,7 +154,7 @@ The design of the UI, made with angular ui, is minimalistic, simple, and to the 
 
 ### Wireframes
 
-![image5](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images//ufcfightsite_lfw.JPG)
+![image5](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/ufcfightsite_lfw.JPG)
 
 
 <!-- DEVELOPMENT PROCESS -->
@@ -247,16 +247,18 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image9][image9]
+![image9][https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/animatedlaptop.jpg]
 <br>
-![image10][image10]
+<br>
+
+![image10][https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/manyiphones.jpg]
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
 
 To see a run through of the application, click below:
 
-[View Demonstration](path/to/video/demonstration)
+[View Demonstration](https://www.loom.com/my-videos/GITHUB_shanrescheepers)
 
 
 See the [open issues](https://github.com/shanrescheepers/ufcfightsite_SEO_21100387issues) for a list of proposed features (and known issues).
