@@ -3,7 +3,7 @@ This is my ufc fight site web app project for SEO.</br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 <!-- Repository Information & Links -->
-<br />
+<br/>
 
 ![Github repo size](https://img.shields.io/github/repo-size/shanrescheepers/ufcfightsite_SEO_21100387)
 ![Github watchers](https://img.shields.io/github/watchers/shanrescheepers/ufcfightsite_SEO_21100387?style=social)
@@ -187,7 +187,6 @@ Integration of `Angular UI` for UI.
 * Async await  used iso axios.get. 
 * Implemented CloudFunctions with `firebase-functions` and `firebase-admin`.
 * API calls failed, debugged cloudfunction api calls.
-* API End Point with cloud functions for Fighters: https://us-central1-fight-site-6dbcd.cloudfunctions.net/getFighters
 * API End Point for Fighters: https://api.sportsdata.io/v3/mma/scores/json/Fighters?(key)
 * Firebase Hosting.
 * Google Analytics SEO data.
