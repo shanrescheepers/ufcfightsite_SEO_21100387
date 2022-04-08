@@ -247,11 +247,11 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image9][https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/animatedlaptop.jpg]
+![image9](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/animatedlaptop.jpg)
 <br>
 <br>
 
-![image10][https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/manyiphones.jpg]
+![image10](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/manyiphones.jpg)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
