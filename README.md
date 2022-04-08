@@ -23,23 +23,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <p align="center">
 
 <a href="https://github.com/shanrescheepers/ufcfightsite_SEO_21100387">
-<img src="assets/images/fightsite-logo-new_1.svg" alt="Logo" width="140" height="140">
+<img src="app/src/assets/images/fightsite-logo-new_1.svg" alt="Logo" width="140" height="140">
 </a>
 
 <h3 align="center">UFC Fight Site</3>
 
-<p align="center">
-    A AngularFire project using the SportsData io  API to incorporate search engine techniques to demonstrate free, direct, organic, editorial, or natural search results in search engines <br>
-    <i>This is the project for SEO 200</i>
-
-    <br />
-    <br />
-    <a href="">View Demo</a>
-    _
-    <a href="https://github.com/shanrescheepers/ufcfightsite_SEO_21100387/issues">Report a Bug</a>
-    _
-    <a href="https://github.com/shanrescheepers/ufcfightsite_SEO_21100387/issues">Request Add Features</a>
-</p>
 
 ## Table of Contents
 
