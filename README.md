@@ -58,7 +58,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <!-- PROJECT DESCRIPTION -->
 ## About the Project
 <!-- header image of project -->
-![image1][assets/images/fightsite-logo-new_1.svg]
+![image1][/my-ufcfightsite-app/src/assets/images//fightsite-logo-new_1.svg]
 
 ### Project Description
 Built for and by fans of the UFC. This project serves to showcase and remind users of the UFC 2022 events and fighters catalogue.
@@ -126,18 +126,18 @@ Install all required dependencies by running the following in the CLI
 ## Features and Functionality
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
-![image2](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/src/assets/images/mockup1.jpg)
+![image2](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images/mockup1.jpg)
 
 ### All The Latest UFC 2022 Fight Events
 
 Using the sportsdata io MMA API, I collected and collated all 2022 UFC events data into a simple unchallenging Angular back and foreground!
 
-![image3](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/src/assets/images/mockup2.jpg)
+![image3](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/my-ufcfightsite-app/src/assets/images/mockup2.jpg)
 
 ### Fighter Search
 Seamlessly search for any UFC fighter and view their different stats and information
 
-![image4](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/src/assets/images/mockup4.jpg)
+![image4](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/my-ufcfightsite-app/src/assets/images/mockup4.jpg)
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->
