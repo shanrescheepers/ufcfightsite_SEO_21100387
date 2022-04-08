@@ -155,7 +155,7 @@ The design of the UI, made with angular ui, is minimalistic, simple, and to the 
 
 ### Wireframes
 
-![image5](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/src/assets/images/ufcfightsite_lfw.JPG)
+![image5](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/my-ufcfightsite-app/src/assets/images//ufcfightsite_lfw.JPG)
 
 
 <!-- DEVELOPMENT PROCESS -->
