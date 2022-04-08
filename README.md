@@ -167,7 +167,7 @@ The design of the UI, made with angular ui, is minimalistic, simple, and to the 
 
 ### Wireframes
 
-![image5](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/src/assets/images/mockup4.jpg)
+![image5](https://raw.githubusercontent.com/shanrescheepers/ufcfightsite_SEO_21100387/main/src/assets/images/ufcfightsite_lfw.JPG)
 
 
 <!-- DEVELOPMENT PROCESS -->
@@ -254,6 +254,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 * Adding to the API IMAGEs of all 1000+ fighters one day...
 * Making my own UFC API
 * Visual and dynamic comparitive dashboards for fighters
+* Hosting time of App to imrpove to allow successful indexing and sitemapping of the site
 
 <!-- MOCKUPS -->
 ## Final Outcome
